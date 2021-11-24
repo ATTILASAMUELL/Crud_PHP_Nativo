@@ -6,7 +6,7 @@ require('config.php');
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 if( $method ==='get'){
-    $sql = $pdo->query("SELECT * FROM ... ");
+    $sql = $pdo->query("SELECT * FROM ... "); //Digita a tabela.
     if($sql->rowCount() > 0){
         $data = $sql->fetchAll(PDO::FETCH_ASSOC);
 
